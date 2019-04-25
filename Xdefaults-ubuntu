@@ -1,0 +1,45 @@
+!special
+XTerm*faceName: Droid Sans Mono:style=Regular
+XTerm*faceSize: 10
+XTerm
+XTerm*VT100.Translations: #override \
+                 Ctrl Shift <Key>V:    insert-selection(CLIPBOARD) \n\
+                 Ctrl Shift <Key>C:    copy-selection(CLIPBOARD)
+
+! special
+*.foreground:   #b9fffb
+*.background:   #142d2d
+*.cursorColor:  #b9fffb
+
+! black
+*.color0:       #666666
+*.color8:       #d7dfe8
+
+! red
+*.color1:       #c33027
+*.color9:       #ff7637
+
+! green
+*.color2:       #26a98b
+*.color10:      #0096f1
+
+! yellow
+*.color3:       #edb54b
+*.color11:      #b4a9ff
+
+! blue
+*.color4:       #00ff2b
+*.color12:      #00baff
+
+! magenta
+*.color5:       #2d48ff
+*.color13:      #ffd7d7
+
+! cyan
+*.color6:       #33859d
+*.color14:      #00d3ff
+
+! white
+*.color7:       #98d1ce
+*.color15:      #d3ebe9
+
