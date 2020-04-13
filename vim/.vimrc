@@ -1,12 +1,29 @@
+"          basic
+
+syntax off
 set incsearch
+
+"          switch off all auto-indenting
+
+set nocindent
+set nosmartindent
+set noautoindent
+set indentexpr=""
+filetype indent off
+filetype plugin indent off
 
 "          tab indentation
 
 set tabstop=2
 set shiftwidth=2
+set softtabstop=0
 set expandtab
-set hidden
 
+"          cli complete menu
+
+set wildmenu
+set wildmode=list,full
+set wildignore=.git,*.o,*.a,*.so,*.pyc
 
 "          keybindings
 
