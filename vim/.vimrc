@@ -42,3 +42,6 @@ noremap  <ESC>[1;2A <S-Up>
 noremap  <ESC>[1;2B <S-Down>
 noremap  <ESC>[1;2C <S-Right>
 noremap  <ESC>[1;2D <S-Left>
+
+nnoremap { } " direction of this motions
+nnoremap } { " should be the same as j k
