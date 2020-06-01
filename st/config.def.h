@@ -109,6 +109,9 @@ static const char *colorname[] = {
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#cccccc",
 	"#555555",
+	"#ffffcc", // 258 - background color
+	"#999944", // 259 - cursor color
+	"#9eeeee", // 260 - selection color
 };
 
 
@@ -116,10 +119,14 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 7;
-unsigned int defaultbg = 0;
-static unsigned int defaultcs = 256;
+unsigned int defaultfg = 0;
+unsigned int defaultbg = 258;
+static unsigned int defaultcs = 259;
 static unsigned int defaultrcs = 257;
+
+/* Colors used for selection */
+unsigned int selectionbg = 260;
+unsigned int selectionfg = 7;
 
 /*
  * Default shape of cursor
@@ -164,8 +171,8 @@ static uint forcemousemod = ShiftMask;
 static MouseShortcut mshortcuts[] = {
 	/* mask                 button   function        argument       release */
 	{ XK_ANY_MOD,           Button2, selpaste,       {.i = 0},      1 },
-	{ XK_ANY_MOD,           Button4, ttysend,        {.s = "\031"} },
-	{ XK_ANY_MOD,           Button5, ttysend,        {.s = "\005"} },
+	//{ XK_ANY_MOD,           Button4, ttysend,        {.s = "\031"} },
+	//{ XK_ANY_MOD,           Button5, ttysend,        {.s = "\005"} },
 };
 
 /* Internal keyboard shortcuts. */

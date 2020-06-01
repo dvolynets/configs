@@ -109,8 +109,9 @@ static const char *colorname[] = {
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#cccccc",
 	"#555555",
-	"#ffffcc", // 258 - background colour
-	"#999944", // 259 - cursor colour
+	"#ffffcc", // 258 - background color
+	"#999944", // 259 - cursor color
+	"#9eeeee", // 260 - selection color
 };
 
 
@@ -122,6 +123,10 @@ unsigned int defaultfg = 0;
 unsigned int defaultbg = 258;
 static unsigned int defaultcs = 259;
 static unsigned int defaultrcs = 257;
+
+/* Colors used for selection */
+unsigned int selectionbg = 260;
+unsigned int selectionfg = 7;
 
 /*
  * Default shape of cursor

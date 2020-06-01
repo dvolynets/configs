@@ -1419,11 +1419,8 @@ xdrawglyphfontspecs(const XftGlyphFontSpec *specs, Glyph base, int len, int x, i
 		fg = &revfg;
 	}
 
-	if (base.mode & ATTR_REVERSE) {
-		temp = fg;
-		fg = bg;
-		bg = temp;
-	}
+	if (base.mode & ATTR_REVERSE)
+		bg = &dc.col[selectionbg];
 
 	if (base.mode & ATTR_BLINK && win.mode & MODE_BLINK)
 		fg = bg;
