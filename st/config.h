@@ -87,12 +87,12 @@ static const char *colorname[] = {
 	/* 8 normal colors */
 	"black",
 	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
+	"#5b9f5b", // vim's pmenusel color - gray
+	"#ffcc33", // vim's search, matchparen color - yellow
+	"black",
 	"magenta3",
 	"cyan3",
-	"gray90",
+	"#999944", // vim's pmenusbar - khaki
 
 	/* 8 bright colors */
 	"gray50",
@@ -101,8 +101,8 @@ static const char *colorname[] = {
 	"yellow",
 	"#5c5cff",
 	"magenta",
-	"cyan",
-	"white",
+	"#eaffff", // vim's pmenu color - cyan
+	"#ffffea", // white 
 
 	[255] = 0,
 
@@ -110,7 +110,7 @@ static const char *colorname[] = {
 	"#cccccc",
 	"#555555",
 	"#ffffcc", // 258 - background color
-	"#999944", // 259 - cursor color
+	"#443300", // 259 - cursor color
 	"#9eeeee", // 260 - selection color
 };
 
