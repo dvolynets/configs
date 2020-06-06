@@ -1,3 +1,8 @@
 st/st
 dwm/dwm
+dmenu/dmenu
+dmenu/dmenu_path
+dmenu/dmenu_run
+dmenu/stest
+
 *.o
