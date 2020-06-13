@@ -1,0 +1,16 @@
+Updating suckless tools
+-----------------------------------------------------------
+1.  git remote add suckless-{tool} url
+2.  git checkout -b copy
+3.  git fetch suckless-{tool} master
+4.  git rm -rf {tool}/
+5.  git read-tree --prefix={tool} -u suckless-{tool}/master
+6.  git reset -- {tool}/config.h
+7.  git restore {tool}/config.h
+8.  git commit -m "..."
+9.  git checkout master
+10. git merge --no-commit --no-ff copy
+11. git reset HEAD # check changes
+12. git add .
+13. git commit -m "..."
+14. git branch -D copy
