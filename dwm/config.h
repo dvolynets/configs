@@ -7,11 +7,11 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "monospace:size=10" };
 static const char dmenufont[]       = "monospace:size=10";
-static const char col_gray1[]       = "#0c0315";
-static const char col_gray2[]       = "#0c0315";
-static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#350a3f";
+static const char col_gray1[]       = "#99994c"; // top panel with name of current window
+static const char col_gray2[]       = "#99994c";
+static const char col_gray3[]       = "#ffffff"; // color of unselected windows
+static const char col_gray4[]       = "#ffffff"; // color of selected window
+static const char col_cyan[]        = "#8888cc"; // top panel with numbers of windows
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
