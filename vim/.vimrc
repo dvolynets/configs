@@ -2,6 +2,8 @@
 
 syntax off
 set incsearch
+set fillchars=stl:^
+set fillchars+=stlnc:`
 
 "          switch off all auto-indenting
 
