@@ -82,6 +82,8 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
+#define NOT_REDEFINED_COLOR(x) (x != 195)
+
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
@@ -91,7 +93,7 @@ static const char *colorname[] = {
 	"#ffba08",
 	"black",
 	"magenta3",
-	"#eaffff", // vim's pmenu, statusline color - cyan
+	"#008080",
 	"#999944", // vim's pmenusbar, statusline - khaki
 
 	/* 8 bright colors */
@@ -104,6 +106,7 @@ static const char *colorname[] = {
 	"#006d6f", // symbolic link color
 	"#ffffff", // white
 
+	[195] = "#eaffff", // vim's pmenu, statusline color - cyan
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */

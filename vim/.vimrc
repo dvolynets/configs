@@ -47,11 +47,11 @@ noremap  <ESC>[1;2D <S-Left>
 
 "          color scheme
 
-highlight Pmenu ctermbg=6
+highlight Pmenu ctermbg=195
 highlight PmenuSel ctermbg=2 ctermfg=15
 highlight PmenuSbar ctermbg=7
 highlight Search ctermbg=NONE
 highlight MatchParen ctermbg=2 ctermfg=15
 highlight WildMenu cterm=bold ctermbg=2 ctermfg=15
-highlight StatusLine cterm=underline ctermbg=6 ctermfg=0
-highlight StatusLineNC cterm=underline ctermbg=6 ctermfg=0
+highlight StatusLine cterm=underline ctermbg=195 ctermfg=0
+highlight StatusLineNC cterm=underline ctermbg=195 ctermfg=0
