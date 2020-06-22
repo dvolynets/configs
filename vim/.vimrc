@@ -45,6 +45,9 @@ noremap  <ESC>[1;2B <S-Down>
 noremap  <ESC>[1;2C <S-Right>
 noremap  <ESC>[1;2D <S-Left>
 
+inoremap <C-a> <C-o>^
+inoremap <C-e> <C-o>$
+
 "          color scheme
 
 highlight Pmenu ctermbg=195
