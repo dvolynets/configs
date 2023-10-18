@@ -58,3 +58,6 @@ highlight MatchParen ctermbg=2 ctermfg=15
 highlight WildMenu cterm=bold ctermbg=2 ctermfg=15
 highlight StatusLine cterm=underline ctermbg=195 ctermfg=0
 highlight StatusLineNC cterm=underline ctermbg=195 ctermfg=0
+
+set path+=**
+set grepprg=rg\ --path-separator\ /\ -n\ --no-heading
